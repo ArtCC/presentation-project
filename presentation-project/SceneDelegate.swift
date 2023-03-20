@@ -3,6 +3,7 @@
 //  presentation-project
 //
 //  Created by Arturo Carretero Calvo on 20/3/23.
+//  Copyright © 2023 ArtCC. All rights reserved.
 //
 
 import UIKit
@@ -10,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   // MARK: - Properties
-  
+
   var window: UIWindow?
 
   func scene(_ scene: UIScene,
@@ -21,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     let window = UIWindow(windowScene: windowScene)
-    window.rootViewController = UINavigationController(rootViewController: SplashViewController())
+    window.rootViewController = SplashViewController()
 
     self.window = window
 

@@ -3,13 +3,14 @@
 //  presentation-project
 //
 //  Created Arturo Carretero Calvo on 20/3/23.
-//  Copyright © 2023 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © 2023 ArtCC. All rights reserved.
 //
 
 import UIKit
 
 protocol SplashDisplayLogic: AnyObject {
   func displayStaticData(viewModel: Splash.StaticData.ViewModel)
+  func displayData(viewModel: Splash.Data.ViewModel)
 }
 
 class SplashViewController: UIViewController {
@@ -56,13 +57,7 @@ class SplashViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupNavigationBar()
     doLoadStaticData()
-  }
-
-  // MARK: - Private
-
-  private func setupNavigationBar() {
   }
 }
 
@@ -74,6 +69,11 @@ extension SplashViewController {
     let request = Splash.StaticData.Request()
     interactor?.doLoadStaticData(request: request)
   }
+
+  private func doLoadData() {
+    let request = Splash.Data.Request()
+    interactor?.doLoadData(request: request)
+  }
 }
 
 // MARK: - Input
@@ -81,5 +81,10 @@ extension SplashViewController {
 extension SplashViewController: SplashDisplayLogic {
 
   func displayStaticData(viewModel: Splash.StaticData.ViewModel) {
+    doLoadData()
+  }
+
+  func displayData(viewModel: Splash.Data.ViewModel) {
+    router?.routeToHome()
   }
 }

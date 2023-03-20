@@ -3,13 +3,14 @@
 //  presentation-project
 //
 //  Created Arturo Carretero Calvo on 20/3/23.
-//  Copyright © 2023 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © 2023 ArtCC. All rights reserved.
 //
 
 import Foundation
 
 protocol SplashBusinessLogic {
   func doLoadStaticData(request: Splash.StaticData.Request)
+  func doLoadData(request: Splash.Data.Request)
 }
 
 protocol SplashDataStore {
@@ -28,5 +29,14 @@ class SplashInteractor: SplashBusinessLogic, SplashDataStore {
     presenter?.presentStaticData(response: response)
   }
 
-  // MARK: - Private
+  func doLoadData(request: Splash.Data.Request) {
+    /**
+     The splash scene directs navigation to a login, a home, a jailbreak scene, maintenance, etc.
+     In this case it is simulated.
+     */
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+      let response = Splash.Data.Response()
+      self.presenter?.presentData(response: response)
+    }
+  }
 }

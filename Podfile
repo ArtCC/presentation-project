@@ -7,6 +7,7 @@ install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
 def pods_common
   pod 'Alamofire'
+  pod 'SwiftGen'
   pod 'SwiftLint'
 end
 

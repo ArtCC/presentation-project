@@ -1,0 +1,21 @@
+input_dir: .
+output_dir: .
+strings:
+  - inputs: presentation-project/es.lproj
+    filter: .+\.strings$
+    outputs:
+      templatePath: swiftgen/strings.stencil
+      output: presentation-project/Constants/Localization.swift
+      params:
+        enumName: Localization
+        table: Localization
+        noComments: true
+xcassets:
+  - inputs: presentation-project/Colors.xcassets
+    outputs:
+      - templatePath: swiftgen/colors.stencil
+        output: presentation-project/Constants/Colors.swift
+  - inputs: presentation-project/Images.xcassets
+    outputs:
+      - templatePath: swiftgen/images.stencil
+        output: presentation-project/Constants/ImageIdentifiers.swift
