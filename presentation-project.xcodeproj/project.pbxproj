@@ -21,6 +21,21 @@
 		8036396729C8B97A005FF0B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8036396629C8B97A005FF0B1 /* SceneDelegate.swift */; };
 		8036396E29C8B97B005FF0B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8036396D29C8B97B005FF0B1 /* Images.xcassets */; };
 		8036397129C8B97B005FF0B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8036396F29C8B97B005FF0B1 /* LaunchScreen.storyboard */; };
+		806A005329C8EB75003FCD1C /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005229C8EB75003FCD1C /* Managers.swift */; };
+		806A006629C8EBC5003FCD1C /* NetworkConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005529C8EBC5003FCD1C /* NetworkConfigManager.swift */; };
+		806A006729C8EBC5003FCD1C /* DefaultNetworkConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005629C8EBC5003FCD1C /* DefaultNetworkConfigManager.swift */; };
+		806A006829C8EBC5003FCD1C /* DomainConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005729C8EBC5003FCD1C /* DomainConvertible.swift */; };
+		806A006929C8EBC5003FCD1C /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005829C8EBC5003FCD1C /* NetworkResponse.swift */; };
+		806A006A29C8EBC5003FCD1C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005929C8EBC5003FCD1C /* NetworkManager.swift */; };
+		806A006E29C8EBC5003FCD1C /* PPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A005E29C8EBC5003FCD1C /* PPNetworkManager.swift */; };
+		806A006F29C8EBC5003FCD1C /* Network+Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A006029C8EBC5003FCD1C /* Network+Weather.swift */; };
+		806A007129C8EBC5003FCD1C /* NetworkManager+RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A006229C8EBC5003FCD1C /* NetworkManager+RequestInterceptor.swift */; };
+		806A007229C8EBC5003FCD1C /* NetworkManager+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A006329C8EBC5003FCD1C /* NetworkManager+Logging.swift */; };
+		806A007329C8EBC5003FCD1C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A006429C8EBC5003FCD1C /* NetworkRequest.swift */; };
+		806A007429C8EBC5003FCD1C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A006529C8EBC5003FCD1C /* NetworkError.swift */; };
+		806A007E29C8EDAA003FCD1C /* EntityParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A007829C8EDAA003FCD1C /* EntityParser.swift */; };
+		806A007F29C8EDAA003FCD1C /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A007929C8EDAA003FCD1C /* PrintLog.swift */; };
+		806A008529C8EE0B003FCD1C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A008429C8EE0B003FCD1C /* String.swift */; };
 		807C590C29C8BA2F000A8E81 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C58FF29C8BA2F000A8E81 /* HomeInteractor.swift */; };
 		807C590D29C8BA2F000A8E81 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C590029C8BA2F000A8E81 /* HomeView.swift */; };
 		807C590E29C8BA2F000A8E81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C590129C8BA2F000A8E81 /* HomeViewController.swift */; };
@@ -68,6 +83,21 @@
 		8036397029C8B97B005FF0B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8036397229C8B97B005FF0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8036397729C8B97B005FF0B1 /* presentation-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "presentation-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		806A005229C8EB75003FCD1C /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		806A005529C8EBC5003FCD1C /* NetworkConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigManager.swift; sourceTree = "<group>"; };
+		806A005629C8EBC5003FCD1C /* DefaultNetworkConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworkConfigManager.swift; sourceTree = "<group>"; };
+		806A005729C8EBC5003FCD1C /* DomainConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainConvertible.swift; sourceTree = "<group>"; };
+		806A005829C8EBC5003FCD1C /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		806A005929C8EBC5003FCD1C /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		806A005E29C8EBC5003FCD1C /* PPNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPNetworkManager.swift; sourceTree = "<group>"; };
+		806A006029C8EBC5003FCD1C /* Network+Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Network+Weather.swift"; sourceTree = "<group>"; };
+		806A006229C8EBC5003FCD1C /* NetworkManager+RequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+RequestInterceptor.swift"; sourceTree = "<group>"; };
+		806A006329C8EBC5003FCD1C /* NetworkManager+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Logging.swift"; sourceTree = "<group>"; };
+		806A006429C8EBC5003FCD1C /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		806A006529C8EBC5003FCD1C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		806A007829C8EDAA003FCD1C /* EntityParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityParser.swift; sourceTree = "<group>"; };
+		806A007929C8EDAA003FCD1C /* PrintLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
+		806A008429C8EE0B003FCD1C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		807C58FF29C8BA2F000A8E81 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		807C590029C8BA2F000A8E81 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		807C590129C8BA2F000A8E81 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +205,10 @@
 				8036396429C8B97A005FF0B1 /* AppDelegate.swift */,
 				8036396629C8B97A005FF0B1 /* SceneDelegate.swift */,
 				800BA4DE29C8E5FA0022651B /* Constants */,
+				806A007529C8ED29003FCD1C /* Entities */,
 				8085AFEA29C8DFE8005B30AA /* Extensions */,
+				806A007629C8EDAA003FCD1C /* Helpers */,
+				806A005029C8EB31003FCD1C /* Managers */,
 				807C58FD29C8BA2F000A8E81 /* Scenes */,
 				800BA4F029C8E8440022651B /* Colors.xcassets */,
 				8036396D29C8B97B005FF0B1 /* Images.xcassets */,
@@ -193,6 +226,73 @@
 				800BA4DF29C8E64E0022651B /* Splash */,
 			);
 			path = "presentation-projectTests";
+			sourceTree = "<group>";
+		};
+		806A005029C8EB31003FCD1C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				806A005429C8EBC5003FCD1C /* Network */,
+				806A005229C8EB75003FCD1C /* Managers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		806A005429C8EBC5003FCD1C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				806A005F29C8EBC5003FCD1C /* Api */,
+				806A005A29C8EBC5003FCD1C /* Models */,
+				806A005529C8EBC5003FCD1C /* NetworkConfigManager.swift */,
+				806A005629C8EBC5003FCD1C /* DefaultNetworkConfigManager.swift */,
+				806A005729C8EBC5003FCD1C /* DomainConvertible.swift */,
+				806A005829C8EBC5003FCD1C /* NetworkResponse.swift */,
+				806A005929C8EBC5003FCD1C /* NetworkManager.swift */,
+				806A005E29C8EBC5003FCD1C /* PPNetworkManager.swift */,
+				806A006229C8EBC5003FCD1C /* NetworkManager+RequestInterceptor.swift */,
+				806A006329C8EBC5003FCD1C /* NetworkManager+Logging.swift */,
+				806A006429C8EBC5003FCD1C /* NetworkRequest.swift */,
+				806A006529C8EBC5003FCD1C /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		806A005A29C8EBC5003FCD1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		806A005F29C8EBC5003FCD1C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				806A006029C8EBC5003FCD1C /* Network+Weather.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		806A007529C8ED29003FCD1C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		806A007629C8EDAA003FCD1C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				806A007829C8EDAA003FCD1C /* EntityParser.swift */,
+				806A007929C8EDAA003FCD1C /* PrintLog.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		806A008329C8EDFD003FCD1C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				806A008429C8EE0B003FCD1C /* String.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		807C58FD29C8BA2F000A8E81 /* Scenes */ = {
@@ -233,6 +333,7 @@
 		8085AFEA29C8DFE8005B30AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				806A008329C8EDFD003FCD1C /* Foundation */,
 				8085AFEB29C8DFF3005B30AA /* UIKit */,
 			);
 			path = Extensions;
@@ -469,23 +570,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				807C591029C8BA2F000A8E81 /* HomeModels.swift in Sources */,
+				806A007E29C8EDAA003FCD1C /* EntityParser.swift in Sources */,
 				800BA4F729C8E8760022651B /* Colors.swift in Sources */,
+				806A005329C8EB75003FCD1C /* Managers.swift in Sources */,
 				8085AFF129C8E086005B30AA /* NSLayoutDimension.swift in Sources */,
 				807C591629C8BA2F000A8E81 /* SplashInteractor.swift in Sources */,
+				806A006729C8EBC5003FCD1C /* DefaultNetworkConfigManager.swift in Sources */,
 				807C591429C8BA2F000A8E81 /* SplashRouter.swift in Sources */,
+				806A006829C8EBC5003FCD1C /* DomainConvertible.swift in Sources */,
+				806A006E29C8EBC5003FCD1C /* PPNetworkManager.swift in Sources */,
+				806A006F29C8EBC5003FCD1C /* Network+Weather.swift in Sources */,
+				806A007129C8EBC5003FCD1C /* NetworkManager+RequestInterceptor.swift in Sources */,
 				807C591729C8BA2F000A8E81 /* SplashModels.swift in Sources */,
+				806A007329C8EBC5003FCD1C /* NetworkRequest.swift in Sources */,
 				8036396529C8B97A005FF0B1 /* AppDelegate.swift in Sources */,
 				807C590F29C8BA2F000A8E81 /* HomeRouter.swift in Sources */,
 				807C591329C8BA2F000A8E81 /* SplashPresenter.swift in Sources */,
+				806A006629C8EBC5003FCD1C /* NetworkConfigManager.swift in Sources */,
 				8036396729C8B97A005FF0B1 /* SceneDelegate.swift in Sources */,
+				806A007229C8EBC5003FCD1C /* NetworkManager+Logging.swift in Sources */,
 				807C590D29C8BA2F000A8E81 /* HomeView.swift in Sources */,
 				8085AFEF29C8E07A005B30AA /* NSLayoutAnchor.swift in Sources */,
+				806A006A29C8EBC5003FCD1C /* NetworkManager.swift in Sources */,
+				806A007F29C8EDAA003FCD1C /* PrintLog.swift in Sources */,
+				806A006929C8EBC5003FCD1C /* NetworkResponse.swift in Sources */,
 				807C591529C8BA2F000A8E81 /* SplashView.swift in Sources */,
 				8085AFED29C8E002005B30AA /* UIView.swift in Sources */,
 				807C591129C8BA2F000A8E81 /* HomePresenter.swift in Sources */,
 				800BA4F629C8E8760022651B /* ImageIdentifiers.swift in Sources */,
 				800BA4F329C8E8640022651B /* Localization.swift in Sources */,
 				807C590C29C8BA2F000A8E81 /* HomeInteractor.swift in Sources */,
+				806A007429C8EBC5003FCD1C /* NetworkError.swift in Sources */,
+				806A008529C8EE0B003FCD1C /* String.swift in Sources */,
 				807C590E29C8BA2F000A8E81 /* HomeViewController.swift in Sources */,
 				807C591229C8BA2F000A8E81 /* SplashViewController.swift in Sources */,
 			);
