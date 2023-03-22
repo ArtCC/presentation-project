@@ -9,7 +9,6 @@
 import UIKit
 
 protocol HomeRoutingLogic {
-  func routeBack()
 }
 
 protocol HomeDataPassing {
@@ -23,10 +22,4 @@ class HomeRouter: HomeRoutingLogic, HomeDataPassing {
   weak var viewController: HomeViewController?
 
   var dataStore: HomeDataStore?
-
-  // MARK: - Routing
-
-  func routeBack() {
-    viewController?.navigationController?.popViewController(animated: true)
-  }
 }

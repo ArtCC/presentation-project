@@ -17,7 +17,7 @@ class DefaultNetworkConfigManager: NetworkConfigManager, SharedNetworkConfigMana
   }
 
   var baseEndpoint: String {
-    ""
+    "https://api.openweathermap.org"
   }
 
   // MARK: - Lifecycle

@@ -4,4 +4,5 @@
 import UIKit
 
 extension UIColor {
+  static let neutralWhite = UIColor.create(named: "neutral_white")
 }

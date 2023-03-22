@@ -48,6 +48,13 @@
 		807C591529C8BA2F000A8E81 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C590929C8BA2F000A8E81 /* SplashView.swift */; };
 		807C591629C8BA2F000A8E81 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C590A29C8BA2F000A8E81 /* SplashInteractor.swift */; };
 		807C591729C8BA2F000A8E81 /* SplashModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C590B29C8BA2F000A8E81 /* SplashModels.swift */; };
+		807F9C2829CAECC300EBE055 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C2729CAECC300EBE055 /* Constants.swift */; };
+		807F9C2A29CAED7D00EBE055 /* WeatherEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C2929CAED7D00EBE055 /* WeatherEntities.swift */; };
+		807F9C2C29CAEE3800EBE055 /* Weather+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C2B29CAEE3800EBE055 /* Weather+Request.swift */; };
+		807F9C2E29CAEE4000EBE055 /* Weather+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C2D29CAEE4000EBE055 /* Weather+Response.swift */; };
+		807F9C3029CAF00500EBE055 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 807F9C2F29CAF00500EBE055 /* README.md */; };
+		807F9C3229CAF5CD00EBE055 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C3129CAF5CD00EBE055 /* UIColor.swift */; };
+		807F9C3429CAF61A00EBE055 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C3329CAF61A00EBE055 /* Regex.swift */; };
 		8085AFED29C8E002005B30AA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085AFEC29C8E002005B30AA /* UIView.swift */; };
 		8085AFEF29C8E07A005B30AA /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085AFEE29C8E07A005B30AA /* NSLayoutAnchor.swift */; };
 		8085AFF129C8E086005B30AA /* NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085AFF029C8E086005B30AA /* NSLayoutDimension.swift */; };
@@ -110,6 +117,13 @@
 		807C590929C8BA2F000A8E81 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		807C590A29C8BA2F000A8E81 /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		807C590B29C8BA2F000A8E81 /* SplashModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashModels.swift; sourceTree = "<group>"; };
+		807F9C2729CAECC300EBE055 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		807F9C2929CAED7D00EBE055 /* WeatherEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntities.swift; sourceTree = "<group>"; };
+		807F9C2B29CAEE3800EBE055 /* Weather+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weather+Request.swift"; sourceTree = "<group>"; };
+		807F9C2D29CAEE4000EBE055 /* Weather+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weather+Response.swift"; sourceTree = "<group>"; };
+		807F9C2F29CAF00500EBE055 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		807F9C3129CAF5CD00EBE055 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		807F9C3329CAF61A00EBE055 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		8085AFEC29C8E002005B30AA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8085AFEE29C8E07A005B30AA /* NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchor.swift; sourceTree = "<group>"; };
 		8085AFF029C8E086005B30AA /* NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutDimension.swift; sourceTree = "<group>"; };
@@ -155,8 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				800BA4F529C8E8760022651B /* Colors.swift */,
+				807F9C2729CAECC300EBE055 /* Constants.swift */,
 				800BA4F429C8E8760022651B /* ImageIdentifiers.swift */,
 				800BA4F229C8E8640022651B /* Localization.swift */,
+				807F9C3329CAF61A00EBE055 /* Regex.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 		8036395829C8B97A005FF0B1 = {
 			isa = PBXGroup;
 			children = (
+				807F9C2F29CAF00500EBE055 /* README.md */,
 				8036396329C8B97A005FF0B1 /* presentation-project */,
 				8036397A29C8B97B005FF0B1 /* presentation-projectTests */,
 				8036396229C8B97A005FF0B1 /* Products */,
@@ -259,6 +276,8 @@
 		806A005A29C8EBC5003FCD1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				807F9C2B29CAEE3800EBE055 /* Weather+Request.swift */,
+				807F9C2D29CAEE4000EBE055 /* Weather+Response.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +293,7 @@
 		806A007529C8ED29003FCD1C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				807F9C2929CAED7D00EBE055 /* WeatherEntities.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -344,6 +364,7 @@
 			children = (
 				8085AFEE29C8E07A005B30AA /* NSLayoutAnchor.swift */,
 				8085AFF029C8E086005B30AA /* NSLayoutDimension.swift */,
+				807F9C3129CAF5CD00EBE055 /* UIColor.swift */,
 				8085AFEC29C8E002005B30AA /* UIView.swift */,
 			);
 			path = UIKit;
@@ -448,6 +469,7 @@
 			files = (
 				8036397129C8B97B005FF0B1 /* LaunchScreen.storyboard in Resources */,
 				800BA4F129C8E8440022651B /* Colors.xcassets in Resources */,
+				807F9C3029CAF00500EBE055 /* README.md in Resources */,
 				800BA4EC29C8E7510022651B /* Localizable.strings in Resources */,
 				8036396E29C8B97B005FF0B1 /* Images.xcassets in Resources */,
 			);
@@ -570,9 +592,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				807C591029C8BA2F000A8E81 /* HomeModels.swift in Sources */,
+				807F9C2E29CAEE4000EBE055 /* Weather+Response.swift in Sources */,
 				806A007E29C8EDAA003FCD1C /* EntityParser.swift in Sources */,
 				800BA4F729C8E8760022651B /* Colors.swift in Sources */,
 				806A005329C8EB75003FCD1C /* Managers.swift in Sources */,
+				807F9C2C29CAEE3800EBE055 /* Weather+Request.swift in Sources */,
 				8085AFF129C8E086005B30AA /* NSLayoutDimension.swift in Sources */,
 				807C591629C8BA2F000A8E81 /* SplashInteractor.swift in Sources */,
 				806A006729C8EBC5003FCD1C /* DefaultNetworkConfigManager.swift in Sources */,
@@ -588,6 +612,7 @@
 				807C591329C8BA2F000A8E81 /* SplashPresenter.swift in Sources */,
 				806A006629C8EBC5003FCD1C /* NetworkConfigManager.swift in Sources */,
 				8036396729C8B97A005FF0B1 /* SceneDelegate.swift in Sources */,
+				807F9C2A29CAED7D00EBE055 /* WeatherEntities.swift in Sources */,
 				806A007229C8EBC5003FCD1C /* NetworkManager+Logging.swift in Sources */,
 				807C590D29C8BA2F000A8E81 /* HomeView.swift in Sources */,
 				8085AFEF29C8E07A005B30AA /* NSLayoutAnchor.swift in Sources */,
@@ -595,6 +620,8 @@
 				806A007F29C8EDAA003FCD1C /* PrintLog.swift in Sources */,
 				806A006929C8EBC5003FCD1C /* NetworkResponse.swift in Sources */,
 				807C591529C8BA2F000A8E81 /* SplashView.swift in Sources */,
+				807F9C3229CAF5CD00EBE055 /* UIColor.swift in Sources */,
+				807F9C3429CAF61A00EBE055 /* Regex.swift in Sources */,
 				8085AFED29C8E002005B30AA /* UIView.swift in Sources */,
 				807C591129C8BA2F000A8E81 /* HomePresenter.swift in Sources */,
 				800BA4F629C8E8760022651B /* ImageIdentifiers.swift in Sources */,
@@ -604,6 +631,7 @@
 				806A008529C8EE0B003FCD1C /* String.swift in Sources */,
 				807C590E29C8BA2F000A8E81 /* HomeViewController.swift in Sources */,
 				807C591229C8BA2F000A8E81 /* SplashViewController.swift in Sources */,
+				807F9C2829CAECC300EBE055 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

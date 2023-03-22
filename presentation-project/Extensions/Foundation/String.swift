@@ -13,4 +13,8 @@ extension String {
   func join<S: Sequence>(_ elements: S) -> String {
     elements.map { String(describing: $0) }.joined(separator: self)
   }
+
+  func isValidUsingRegex(_ regex: String) -> Bool {
+    range(of: regex, options: .regularExpression) != nil
+  }
 }

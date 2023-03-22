@@ -5,3 +5,7 @@
  Created by Arturo Carretero Calvo on 20/3/23.
  Copyright © 2023 ArtCC. All rights reserved.
  */
+
+"navigation.weather.title" = "Weather";
+"home.search.placeholder" = "City search";
+"home.search.error" = "An error has occurred, please try again after a few minutes";

@@ -10,6 +10,7 @@ import Foundation
 
 protocol HomePresentationLogic {
   func presentStaticData(response: Home.StaticData.Response)
+  func presentSearch(response: Home.Search.Response)
 }
 
 class HomePresenter: HomePresentationLogic {
@@ -25,5 +26,21 @@ class HomePresenter: HomePresentationLogic {
     viewController?.displayStaticData(viewModel: viewModel)
   }
 
+  func presentSearch(response: Home.Search.Response) {
+    var action: HomeGetWeatherAction
+    switch response.state {
+    case .success(let entity):
+      action = .success(data: createHomeViewData(with: entity))
+    case .failure(let error):
+      action = .failure(error: error)
+    }
+    let viewModel = Home.Search.ViewModel(action: action)
+    viewController?.displaySearch(viewModel: viewModel)
+  }
+
   // MARK: - Private
+
+  private func createHomeViewData(with entity: WeatherEntity) -> HomeViewData {
+    HomeViewData(identifier: entity.identifier, name: entity.name, temperature: "\(entity.temperature) ºC")
+  }
 }

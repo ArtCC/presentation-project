@@ -6,6 +6,9 @@ import Foundation
 // MARK: - Strings
 
 internal enum Localization {
+  internal static let homeSearchError = Localization.translation("Localizable", "home.search.error")
+  internal static let homeSearchPlaceholder = Localization.translation("Localizable", "home.search.placeholder")
+  internal static let navigationWeatherTitle = Localization.translation("Localizable", "navigation.weather.title")
 }
 
 // MARK: - Implementation Details

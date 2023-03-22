@@ -1,7 +1,11 @@
-/* 
+/*
  Localizable.strings
  presentation-project
 
  Created by Arturo Carretero Calvo on 20/3/23.
  Copyright © 2023 ArtCC. All rights reserved.
  */
+
+"navigation.weather.title" = "El tiempo";
+"home.search.placeholder" = "Buscar ciudad";
+"home.search.error" = "Ha ocurrido un error, vuelve a intentarlo pasados unos minutos";

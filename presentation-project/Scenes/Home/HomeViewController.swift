@@ -10,6 +10,7 @@ import UIKit
 
 protocol HomeDisplayLogic: AnyObject {
   func displayStaticData(viewModel: Home.StaticData.ViewModel)
+  func displaySearch(viewModel: Home.Search.ViewModel)
 }
 
 class HomeViewController: UIViewController {
@@ -43,6 +44,7 @@ class HomeViewController: UIViewController {
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
+    interactor.weatherManager = Managers.network
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor
@@ -52,6 +54,8 @@ class HomeViewController: UIViewController {
 
   override func loadView() {
     view = sceneView
+
+    sceneView.delegate = self
   }
 
   override func viewDidLoad() {
@@ -63,6 +67,9 @@ class HomeViewController: UIViewController {
   // MARK: - Private
 
   private func setupNavigationBar() {
+    title = Localization.navigationWeatherTitle
+
+    navigationController?.navigationBar.backgroundColor = .neutralWhite
   }
 }
 
@@ -74,6 +81,16 @@ extension HomeViewController {
     let request = Home.StaticData.Request()
     interactor?.doLoadStaticData(request: request)
   }
+
+  private func doLoadText(for text: String?) {
+    let request = Home.Text.Request(text: text)
+    interactor?.doLoadText(request: request)
+  }
+
+  private func doLoadSearch() {
+    let request = Home.Search.Request()
+    interactor?.doLoadSearch(request: request)
+  }
 }
 
 // MARK: - Input
@@ -81,5 +98,27 @@ extension HomeViewController {
 extension HomeViewController: HomeDisplayLogic {
 
   func displayStaticData(viewModel: Home.StaticData.ViewModel) {
+  }
+
+  func displaySearch(viewModel: Home.Search.ViewModel) {
+    switch viewModel.action {
+    case .success(let data):
+      sceneView.setupUI(data: data)
+    case .failure(let error):
+      sceneView.setError(error)
+    }
+  }
+}
+
+// MARK: - HomeViewDelegate
+
+extension HomeViewController: HomeViewDelegate {
+
+  func homeViewDidChangeTextSearch(_ view: HomeView, text: String?) {
+    doLoadText(for: text)
+  }
+
+  func homeViewDidTapSearch(_ view: HomeView) {
+    doLoadSearch()
   }
 }
