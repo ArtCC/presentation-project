@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
     viewController.interactor = interactor
     viewController.router = router
     interactor.presenter = presenter
-    interactor.weatherManager = Managers.network
+    interactor.weatherApi = Managers.network
     presenter.viewController = viewController
     router.viewController = viewController
     router.dataStore = interactor

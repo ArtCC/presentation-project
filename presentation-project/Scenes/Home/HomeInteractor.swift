@@ -22,7 +22,7 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore {
   // MARK: - Properties
 
   var presenter: HomePresentationLogic?
-  var weatherManager: WeatherAPI?
+  var weatherApi: WeatherAPI?
 
   private var text: String?
 
@@ -38,12 +38,7 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore {
   }
 
   func doLoadSearch(request: Home.Search.Request) {
-    guard let text else {
-      let response = Home.Search.Response(state: .failure(error: Localization.homeSearchError))
-      presenter?.presentSearch(response: response)
-      return
-    }
-    weatherManager?.getWeather(parameters: GetWeatherParameters(search: text), completion: { result in
+    weatherApi?.getWeather(parameters: GetWeatherParameters(search: text), completion: { result in
 
       var state: HomeGetWeatherState
       switch result {

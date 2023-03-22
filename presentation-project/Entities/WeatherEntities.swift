@@ -19,7 +19,7 @@ struct WeatherEntity {
 // MARK: - Parameters
 
 struct GetWeatherParameters {
-  let search: String
+  let search: String?
 }
 
 // MARK: - Errors

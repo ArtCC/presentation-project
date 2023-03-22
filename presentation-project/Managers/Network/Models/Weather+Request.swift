@@ -32,7 +32,7 @@ struct GetWeatherRequestData {
 
   func getParameters() -> [String: Any] {
     [
-      "q": parameters.search,
+      "q": parameters.search ?? "",
       "appid": Constants.openWeatherApiKey,
       "lang": "es",
       "units": "metric"

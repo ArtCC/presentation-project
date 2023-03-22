@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		043F7B26871ACEF11FEEED22 /* Pods_presentation_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1236F67A2A8DE3C82E56ACD /* Pods_presentation_projectTests.framework */; };
-		800BA4E529C8E64E0022651B /* SplashInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BA4E029C8E64E0022651B /* SplashInteractorTests.swift */; };
-		800BA4E629C8E64E0022651B /* SplashPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BA4E129C8E64E0022651B /* SplashPresenterTests.swift */; };
 		800BA4E729C8E64E0022651B /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BA4E329C8E64E0022651B /* HomeInteractorTests.swift */; };
 		800BA4E829C8E64E0022651B /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BA4E429C8E64E0022651B /* HomePresenterTests.swift */; };
 		800BA4EC29C8E7510022651B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 800BA4EE29C8E7510022651B /* Localizable.strings */; };
@@ -55,6 +53,7 @@
 		807F9C3029CAF00500EBE055 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 807F9C2F29CAF00500EBE055 /* README.md */; };
 		807F9C3229CAF5CD00EBE055 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C3129CAF5CD00EBE055 /* UIColor.swift */; };
 		807F9C3429CAF61A00EBE055 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C3329CAF61A00EBE055 /* Regex.swift */; };
+		807F9C3929CB072A00EBE055 /* WeatherApiSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F9C3829CB072A00EBE055 /* WeatherApiSpy.swift */; };
 		8085AFED29C8E002005B30AA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085AFEC29C8E002005B30AA /* UIView.swift */; };
 		8085AFEF29C8E07A005B30AA /* NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085AFEE29C8E07A005B30AA /* NSLayoutAnchor.swift */; };
 		8085AFF129C8E086005B30AA /* NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085AFF029C8E086005B30AA /* NSLayoutDimension.swift */; };
@@ -73,8 +72,6 @@
 
 /* Begin PBXFileReference section */
 		5811FB5C54DF7F9D4326F96B /* Pods_presentation_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_presentation_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		800BA4E029C8E64E0022651B /* SplashInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractorTests.swift; sourceTree = "<group>"; };
-		800BA4E129C8E64E0022651B /* SplashPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenterTests.swift; sourceTree = "<group>"; };
 		800BA4E329C8E64E0022651B /* HomeInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
 		800BA4E429C8E64E0022651B /* HomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		800BA4ED29C8E7510022651B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -124,6 +121,7 @@
 		807F9C2F29CAF00500EBE055 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		807F9C3129CAF5CD00EBE055 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		807F9C3329CAF61A00EBE055 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		807F9C3829CB072A00EBE055 /* WeatherApiSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiSpy.swift; sourceTree = "<group>"; };
 		8085AFEC29C8E002005B30AA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8085AFEE29C8E07A005B30AA /* NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchor.swift; sourceTree = "<group>"; };
 		8085AFF029C8E086005B30AA /* NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutDimension.swift; sourceTree = "<group>"; };
@@ -175,15 +173,6 @@
 				807F9C3329CAF61A00EBE055 /* Regex.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		800BA4DF29C8E64E0022651B /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				800BA4E029C8E64E0022651B /* SplashInteractorTests.swift */,
-				800BA4E129C8E64E0022651B /* SplashPresenterTests.swift */,
-			);
-			path = Splash;
 			sourceTree = "<group>";
 		};
 		800BA4E229C8E64E0022651B /* Home */ = {
@@ -239,8 +228,8 @@
 		8036397A29C8B97B005FF0B1 /* presentation-projectTests */ = {
 			isa = PBXGroup;
 			children = (
+				807F9C3529CB070700EBE055 /* Managers */,
 				800BA4E229C8E64E0022651B /* Home */,
-				800BA4DF29C8E64E0022651B /* Splash */,
 			);
 			path = "presentation-projectTests";
 			sourceTree = "<group>";
@@ -348,6 +337,30 @@
 				807C590B29C8BA2F000A8E81 /* SplashModels.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		807F9C3529CB070700EBE055 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				807F9C3629CB071500EBE055 /* Networks */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		807F9C3629CB071500EBE055 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				807F9C3729CB071A00EBE055 /* Api */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		807F9C3729CB071A00EBE055 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				807F9C3829CB072A00EBE055 /* WeatherApiSpy.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 		8085AFEA29C8DFE8005B30AA /* Extensions */ = {
@@ -640,9 +653,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				800BA4E729C8E64E0022651B /* HomeInteractorTests.swift in Sources */,
-				800BA4E529C8E64E0022651B /* SplashInteractorTests.swift in Sources */,
-				800BA4E629C8E64E0022651B /* SplashPresenterTests.swift in Sources */,
 				800BA4E829C8E64E0022651B /* HomePresenterTests.swift in Sources */,
+				807F9C3929CB072A00EBE055 /* WeatherApiSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
